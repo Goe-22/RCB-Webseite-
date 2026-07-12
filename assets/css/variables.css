@@ -1,0 +1,35 @@
+/* =======================================================
+   RCB Webseite
+   Farbvariablen
+======================================================= */
+
+:root {
+
+    /* Vereinsfarben */
+    --rcb-blue: #0f2747;
+    --rcb-blue-dark: #081728;
+    --rcb-red: #d90429;
+
+    /* Hintergrund */
+    --background: #09121f;
+    --surface: #112240;
+
+    /* Schrift */
+    --white: #ffffff;
+    --light: #d8dee9;
+    --gray: #94a3b8;
+
+    /* Buttons */
+    --button: var(--rcb-red);
+    --button-hover: #b70323;
+
+    /* Layout */
+    --max-width: 1200px;
+
+    /* Schatten */
+    --shadow: 0 8px 25px rgba(0,0,0,.35);
+
+    /* Animation */
+    --transition: .3s ease;
+
+}
