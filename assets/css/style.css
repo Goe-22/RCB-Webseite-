@@ -81,3 +81,51 @@ footer {
     background: #112240;
     margin-top: 80px;
 }
+
+/* =======================================================
+   HEADER
+======================================================= */
+
+header {
+    background: var(--rcb-blue);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: var(--shadow);
+}
+
+.container {
+    max-width: var(--max-width);
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.logo h1 {
+    color: var(--white);
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.logo p {
+    color: var(--gray);
+    font-size: .9rem;
+    letter-spacing: 2px;
+}
+
+nav ul {
+    display: flex;
+    gap: 30px;
+}
+
+nav a {
+    color: var(--white);
+    transition: var(--transition);
+    font-weight: 600;
+}
+
+nav a:hover {
+    color: var(--rcb-red);
+}
