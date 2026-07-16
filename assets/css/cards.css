@@ -149,3 +149,27 @@
     background: #ff4d4d;
 
 }
+
+/* ---------- Badge ---------- */
+
+.badge {
+
+    display: inline-block;
+
+    margin-left: 10px;
+
+    padding: 4px 10px;
+
+    background: #f0b429;
+
+    color: #222;
+
+    font-size: .75rem;
+
+    font-weight: bold;
+
+    border-radius: 20px;
+
+    vertical-align: middle;
+
+}
