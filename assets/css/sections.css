@@ -1,0 +1,127 @@
+/* ==========================================================
+   RCB Webseite
+   Bereiche
+   Version 0.1.1
+========================================================== */
+
+/* ---------- Allgemein ---------- */
+
+section {
+
+    padding: 100px 0;
+
+}
+
+section h2 {
+
+    font-size: 2.6rem;
+
+    text-align: center;
+
+    margin-bottom: 30px;
+
+    color: var(--white);
+
+}
+
+section p {
+
+    color: var(--light);
+
+}
+
+/* ---------- Willkommen ---------- */
+
+.welcome {
+
+    text-align: center;
+
+}
+
+.welcome p {
+
+    max-width: 900px;
+
+    margin: 0 auto;
+
+    font-size: 1.15rem;
+
+}
+
+/* ---------- Mitglied werden ---------- */
+
+.join {
+
+    background: linear-gradient(
+        135deg,
+        #13253d,
+        #0b1727
+    );
+
+    text-align: center;
+
+}
+
+.join p {
+
+    max-width: 700px;
+
+    margin: 20px auto 40px;
+
+    font-size: 1.2rem;
+
+}
+
+.join .button {
+
+    font-size: 1.1rem;
+
+    padding: 18px 40px;
+
+}
+
+/* ---------- Sponsoren ---------- */
+
+.sponsors {
+
+    text-align: center;
+
+}
+
+.sponsors p {
+
+    max-width: 800px;
+
+    margin: auto;
+
+    font-size: 1.1rem;
+
+    color: var(--gray);
+
+}
+
+/* ---------- Trenner ---------- */
+
+.tracks {
+
+    border-top: 1px solid rgba(255,255,255,.05);
+
+}
+
+.news {
+
+    border-top: 1px solid rgba(255,255,255,.05);
+
+}
+
+.join {
+
+    border-top: 1px solid rgba(255,255,255,.05);
+
+}
+
+.sponsors {
+
+    border-top: 1px solid rgba(255,255,255,.05);
+
+}
