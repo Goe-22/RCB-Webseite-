@@ -20,6 +20,14 @@
 
 @import url("header.css");
 
+/* Navigation */
+
+@import url("navigation.css");
+
+/* Dropdown Menü */
+
+@import url("dropdown.css");
+
 /* Hero-Bereich */
 
 @import url("hero.css");
@@ -43,10 +51,6 @@
 /* Responsive Design */
 
 @import url("mobile.css");
-
-/* Navigation */
-
-@import url("navigation.css");
 
 /* Adminbereich (später) */
 
