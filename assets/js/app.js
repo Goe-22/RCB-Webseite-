@@ -15,6 +15,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const menuButton = document.querySelector(".menu-toggle");
     const mobileMenu = document.querySelector(".mobile-menu");
     const overlay = document.querySelector(".mobile-overlay");
+    const closeButton = document.querySelector(".mobile-close");
 
     /* ==========================================
        Menü öffnen
@@ -45,6 +46,11 @@ document.addEventListener("DOMContentLoaded", () => {
     if (overlay) {
 
         overlay.addEventListener("click", closeMenu);
+        if (closeButton) {
+
+    closeButton.addEventListener("click", closeMenu);
+
+}
 
     }
 
