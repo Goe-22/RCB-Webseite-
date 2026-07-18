@@ -1,0 +1,176 @@
+/* ==========================================================
+   RC Bande Zwickau e.V.
+   Version 1.0
+   Dropdown Menü
+========================================================== */
+
+/* ==========================
+   Dropdown Grundlayout
+========================== */
+
+.has-dropdown{
+
+    position:relative;
+
+}
+
+/* ==========================
+   Dropdown Menü
+========================== */
+
+.dropdown{
+
+    position:absolute;
+
+    top:100%;
+
+    left:0;
+
+    min-width:240px;
+
+    background:var(--white);
+
+    border-radius:var(--radius-medium);
+
+    box-shadow:var(--shadow-medium);
+
+    padding:10px 0;
+
+    opacity:0;
+
+    visibility:hidden;
+
+    transform:translateY(15px);
+
+    transition:var(--transition);
+
+    z-index:999;
+
+}
+
+/* ==========================
+   Anzeigen
+========================== */
+
+.has-dropdown:hover>.dropdown{
+
+    opacity:1;
+
+    visibility:visible;
+
+    transform:translateY(0);
+
+}
+
+/* ==========================
+   Liste
+========================== */
+
+.dropdown ul{
+
+    display:block;
+
+    margin:0;
+
+    padding:0;
+
+}
+
+/* ==========================
+   Einträge
+========================== */
+
+.dropdown li{
+
+    width:100%;
+
+}
+
+/* ==========================
+   Links
+========================== */
+
+.dropdown a{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:flex-start;
+
+    width:100%;
+
+    height:auto;
+
+    padding:14px 20px;
+
+    color:var(--text);
+
+    border:none;
+
+    font-size:.95rem;
+
+    font-weight:500;
+
+    background:transparent;
+
+    transition:var(--transition);
+
+}
+
+/* ==========================
+   Hover
+========================== */
+
+.dropdown a:hover{
+
+    background:var(--background);
+
+    color:var(--rcb-red);
+
+    padding-left:28px;
+
+}
+
+/* ==========================
+   Icons
+========================== */
+
+.dropdown a span{
+
+    margin-right:10px;
+
+    font-size:1.1rem;
+
+}
+
+/* ==========================
+   Trennlinie
+========================== */
+
+.dropdown hr{
+
+    border:none;
+
+    border-top:1px solid var(--border);
+
+    margin:8px 0;
+
+}
+
+/* ==========================
+   Mobile
+
+   Mobile-Menü bekommt später
+   eine eigene Datei.
+========================== */
+
+@media (max-width:1000px){
+
+    .dropdown{
+
+        display:none;
+
+    }
+
+}
