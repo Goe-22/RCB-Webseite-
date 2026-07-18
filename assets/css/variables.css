@@ -1,35 +1,68 @@
-/* =======================================================
-   RCB Webseite
-   Farbvariablen
-======================================================= */
+/* ==========================================================
+   RC Bande Zwickau e.V.
+   Version 1.0
+   Variablen
+========================================================== */
 
 :root {
 
-    /* Vereinsfarben */
-    --rcb-blue: #0f2747;
-    --rcb-blue-dark: #081728;
-    --rcb-red: #d90429;
+    /* Farben */
 
-    /* Hintergrund */
-    --background: #09121f;
-    --surface: #112240;
+    --rcb-blue: #0b2341;
+    --rcb-blue-light: #163a63;
+    --rcb-red: #d61f26;
 
-    /* Schrift */
     --white: #ffffff;
-    --light: #d8dee9;
-    --gray: #94a3b8;
+    --black: #111111;
 
-    /* Buttons */
-    --button: var(--rcb-red);
-    --button-hover: #b70323;
+    --text: #333333;
+    --text-light: #666666;
 
-    /* Layout */
-    --max-width: 1200px;
+    --background: #f5f7fa;
+    --surface: #ffffff;
+
+    --border: #e2e8f0;
+
+    --success: #16a34a;
+    --warning: #f59e0b;
+    --danger: #dc2626;
 
     /* Schatten */
-    --shadow: 0 8px 25px rgba(0,0,0,.35);
+
+    --shadow-small: 0 2px 8px rgba(0,0,0,.08);
+    --shadow-medium: 0 8px 20px rgba(0,0,0,.12);
+    --shadow-large: 0 15px 40px rgba(0,0,0,.18);
+
+    /* Abstände */
+
+    --space-xs: 8px;
+    --space-sm: 16px;
+    --space-md: 24px;
+    --space-lg: 40px;
+    --space-xl: 60px;
+    --space-xxl: 100px;
+
+    /* Rundungen */
+
+    --radius-small: 8px;
+    --radius-medium: 14px;
+    --radius-large: 20px;
+
+    /* Max. Seitenbreite */
+
+    --container-width: 1200px;
 
     /* Animation */
+
     --transition: .3s ease;
+
+    /* Schriftgrößen */
+
+    --font-small: .9rem;
+    --font-normal: 1rem;
+    --font-medium: 1.2rem;
+    --font-large: 1.6rem;
+    --font-xl: 2.3rem;
+    --font-hero: 3.6rem;
 
 }
