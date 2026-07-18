@@ -1,0 +1,151 @@
+/* ==========================================================
+   RC Bande Zwickau e.V.
+   Version 1.0
+   Navigation
+========================================================== */
+
+/* ==========================
+   Hauptnavigation
+========================== */
+
+.main-navigation {
+
+    display: flex;
+
+    align-items: center;
+
+    height: 100%;
+
+}
+
+.main-navigation ul {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    margin: 0;
+
+    padding: 0;
+
+    list-style: none;
+
+}
+
+/* ==========================
+   Menüpunkte
+========================== */
+
+.main-navigation li {
+
+    position: relative;
+
+}
+
+/* ==========================
+   Links
+========================== */
+
+.main-navigation a {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    height: var(--header-height);
+
+    padding: 0 16px;
+
+    color: var(--white);
+
+    font-size: 1rem;
+
+    font-weight: 600;
+
+    text-decoration: none;
+
+    transition: var(--transition);
+
+    border-bottom: 3px solid transparent;
+
+}
+
+/* ==========================
+   Hover
+========================== */
+
+.main-navigation a:hover {
+
+    color: var(--rcb-red);
+
+    border-bottom-color: var(--rcb-red);
+
+}
+
+/* ==========================
+   Aktive Seite
+========================== */
+
+.main-navigation a.active {
+
+    color: var(--rcb-red);
+
+    border-bottom-color: var(--rcb-red);
+
+}
+
+/* ==========================
+   Untermenü-Pfeil
+========================== */
+
+.main-navigation li.has-dropdown > a::after {
+
+    content: "▼";
+
+    font-size: .6rem;
+
+    margin-left: 8px;
+
+    transition: var(--transition);
+
+}
+
+.main-navigation li.has-dropdown:hover > a::after {
+
+    transform: rotate(180deg);
+
+}
+
+/* ==========================
+   Trenner (optional)
+========================== */
+
+.main-navigation .divider {
+
+    width: 1px;
+
+    height: 24px;
+
+    background: rgba(255,255,255,.20);
+
+    margin: 0 8px;
+
+}
+
+/* ==========================
+   Desktop ausblenden
+========================== */
+
+@media (max-width:1000px){
+
+    .main-navigation{
+
+        display:none;
+
+    }
+
+}
