@@ -77,5 +77,29 @@ document.addEventListener("DOMContentLoaded", () => {
         });
 
     });
+    
+    /* ==========================================
+   Menü nach Auswahl schließen
+========================================== */
+
+const mobileLinks = document.querySelectorAll(".mobile-nav a");
+
+mobileLinks.forEach(link => {
+
+    link.addEventListener("click", function () {
+
+        /* Untermenüs sollen geöffnet bleiben */
+
+        if (this.querySelector(".submenu-arrow")) {
+
+            return;
+
+        }
+
+        closeMenu();
+
+    });
+
+});
 
 });
