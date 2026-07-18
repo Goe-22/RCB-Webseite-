@@ -1,9 +1,51 @@
+/* ==========================================================
+   RC Bande Zwickau e.V.
+   Version 1.0
+   Haupt-Stylesheet
+
+   Diese Datei lädt alle CSS-Module.
+   In dieser Datei werden später keine Styles mehr
+   geschrieben.
+========================================================== */
+
+/* Grundeinstellungen */
+
 @import url("variables.css");
+
+/* Layout */
+
 @import url("layout.css");
+
+/* Header & Navigation */
+
 @import url("header.css");
+
+/* Hero-Bereich */
+
 @import url("hero.css");
+
+/* Karten */
+
 @import url("cards.css");
+
+/* Buttons */
+
 @import url("buttons.css");
+
+/* Footer */
+
 @import url("footer.css");
-@import url("mobile.css");
+
+/* Animationen */
+
 @import url("animations.css");
+
+/* Responsive Design */
+
+@import url("mobile.css");
+
+/* Adminbereich (später) */
+
+/*
+@import url("admin.css");
+*/
