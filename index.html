@@ -19,35 +19,140 @@
 
 <header>
 
+   <header class="site-header">
+
     <div class="container">
 
-        <div class="logo">
+        <!-- Logo -->
 
-            <!-- Logo folgt später -->
+        <a href="index.html" class="logo">
 
-            <h1>RC BANDE ZWICKAU</h1>
+            <img src="assets/images/logo.png" alt="RC Bande Zwickau">
 
-            <p>ONROAD • OFFROAD • RACING</p>
+            <div class="logo-text">
 
-        </div>
+                <span class="logo-title">
+                    RC Bande Zwickau
+                </span>
 
-        <nav>
+                <span class="logo-subtitle">
+                    ONROAD • OFFROAD • RACING
+                </span>
+
+            </div>
+
+        </a>
+
+        <!-- Desktop Navigation -->
+
+        <nav class="main-navigation">
 
             <ul>
 
-               <li><a href="index.html" class="active">Home</a></li>
-                <li><a href="verein.html">Verein</a></li>
-                <li><a href="strecken.html">Strecken</a></li>
-                <li><a href="termine.html">Termine</a></li>
-                <li><a href="reglement.html">Reglement</a></li>
-                <li><a href="ergebnisse.html">Ergebnisse</a></li>
-                <li><a href="live.html">Live</a></li>
-                <li><a href="mitglied.html">Mitglied werden</a></li>
-                <li><a href="kontakt.html">Kontakt</a></li>
+                <li>
+                    <a href="index.html" class="active">Home</a>
+                </li>
+
+                <li>
+                    <a href="verein.html">Verein</a>
+                </li>
+
+                <li class="has-dropdown">
+
+                    <a href="strecken.html">
+                        Strecken
+                    </a>
+
+                    <div class="dropdown">
+
+                        <ul>
+
+                            <li>
+                                <a href="onroad.html">
+                                    <span>🏎️</span>
+                                    Onroad
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="offroad.html">
+                                    <span>🚙</span>
+                                    Offroad
+                                </a>
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+                </li>
+
+                <li>
+                    <a href="termine.html">Termine</a>
+                </li>
+
+                <li class="has-dropdown">
+
+                    <a href="reglement.html">
+                        Reglement
+                    </a>
+
+                    <div class="dropdown">
+
+                        <ul>
+
+                            <li>
+                                <a href="reglement-klasse1.html">
+                                    Klasse 1
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="reglement-klasse2.html">
+                                    Klasse 2
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="reglement-klasse3.html">
+                                    Klasse 3
+                                </a>
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+                </li>
+
+                <li>
+                    <a href="ergebnisse.html">Ergebnisse</a>
+                </li>
+
+                <li>
+                    <a href="live.html">Live</a>
+                </li>
+
+                <li>
+                    <a href="mitglied.html">Mitglied werden</a>
+                </li>
+
+                <li>
+                    <a href="kontakt.html">Kontakt</a>
+                </li>
 
             </ul>
 
         </nav>
+
+        <!-- Hamburger Button -->
+
+        <button class="menu-toggle"
+                aria-label="Menü öffnen">
+
+            ☰
+
+        </button>
 
     </div>
 
