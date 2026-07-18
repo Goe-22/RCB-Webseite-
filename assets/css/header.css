@@ -1,0 +1,187 @@
+/* ==========================================================
+   RC Bande Zwickau e.V.
+   Version 1.0
+   Header
+========================================================== */
+
+/* ==========================
+   Header
+========================== */
+
+.site-header {
+
+    position: sticky;
+
+    top: 0;
+
+    left: 0;
+
+    width: 100%;
+
+    height: var(--header-height);
+
+    background: var(--rcb-blue);
+
+    box-shadow: var(--shadow-small);
+
+    z-index: var(--z-header);
+
+}
+
+/* ==========================
+   Header Container
+========================== */
+
+.site-header .container {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    height: 100%;
+
+}
+
+/* ==========================
+   Logo
+========================== */
+
+.logo {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+}
+
+.logo img {
+
+    height: 60px;
+
+    width: auto;
+
+}
+
+.logo-text {
+
+    display: flex;
+
+    flex-direction: column;
+
+}
+
+.logo-title {
+
+    color: var(--white);
+
+    font-size: 1.4rem;
+
+    font-weight: 700;
+
+    line-height: 1.1;
+
+}
+
+.logo-subtitle {
+
+    color: rgba(255,255,255,.75);
+
+    font-size: .85rem;
+
+    letter-spacing: 2px;
+
+    text-transform: uppercase;
+
+}
+
+/* ==========================
+   Navigation
+========================== */
+
+.main-navigation {
+
+    display: flex;
+
+    align-items: center;
+
+}
+
+/* ==========================
+   Hamburger Button
+========================== */
+
+.menu-toggle {
+
+    display: none;
+
+    width: 46px;
+
+    height: 46px;
+
+    border: none;
+
+    border-radius: var(--radius-small);
+
+    background: transparent;
+
+    color: var(--white);
+
+    font-size: 28px;
+
+    cursor: pointer;
+
+    transition: var(--transition);
+
+}
+
+.menu-toggle:hover {
+
+    background: rgba(255,255,255,.10);
+
+}
+
+/* ==========================
+   Header Buttons
+========================== */
+
+.header-actions {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+}
+
+/* ==========================
+   Admin Button (später)
+========================== */
+
+.admin-button {
+
+    display: none;
+
+}
+
+/* ==========================
+   Mobile
+========================== */
+
+@media (max-width:1000px){
+
+    .menu-toggle{
+
+        display:flex;
+
+        justify-content:center;
+
+        align-items:center;
+
+    }
+
+}
