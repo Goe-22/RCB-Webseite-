@@ -1,68 +1,141 @@
 /* ==========================================================
    RC Bande Zwickau e.V.
    Version 1.0
-   Variablen
+   CSS Variablen
 ========================================================== */
 
 :root {
 
-    /* Farben */
+    /* ======================================================
+       Farben
+    ====================================================== */
 
-    --rcb-blue: #0b2341;
-    --rcb-blue-light: #163a63;
-    --rcb-red: #d61f26;
+    --rcb-blue: #0B2341;
+    --rcb-blue-dark: #081728;
+    --rcb-blue-light: #1A3B63;
 
-    --white: #ffffff;
+    --rcb-red: #D61F26;
+
+    --white: #FFFFFF;
     --black: #111111;
 
-    --text: #333333;
+    --background: #F4F7FA;
+    --surface: #FFFFFF;
+
+    --text: #2E2E2E;
     --text-light: #666666;
 
-    --background: #f5f7fa;
-    --surface: #ffffff;
+    --border: #E5E7EB;
 
-    --border: #e2e8f0;
+    --success: #16A34A;
+    --warning: #F59E0B;
+    --danger: #DC2626;
 
-    --success: #16a34a;
-    --warning: #f59e0b;
-    --danger: #dc2626;
-
-    /* Schatten */
-
-    --shadow-small: 0 2px 8px rgba(0,0,0,.08);
-    --shadow-medium: 0 8px 20px rgba(0,0,0,.12);
-    --shadow-large: 0 15px 40px rgba(0,0,0,.18);
-
-    /* Abstände */
-
-    --space-xs: 8px;
-    --space-sm: 16px;
-    --space-md: 24px;
-    --space-lg: 40px;
-    --space-xl: 60px;
-    --space-xxl: 100px;
-
-    /* Rundungen */
-
-    --radius-small: 8px;
-    --radius-medium: 14px;
-    --radius-large: 20px;
-
-    /* Max. Seitenbreite */
+    /* ======================================================
+       Container
+    ====================================================== */
 
     --container-width: 1200px;
 
-    /* Animation */
+    /* ======================================================
+       Abstände
+    ====================================================== */
 
-    --transition: .3s ease;
+    --space-xs: 5px;
+    --space-sm: 10px;
+    --space-md: 20px;
+    --space-lg: 40px;
+    --space-xl: 70px;
+    --space-xxl: 120px;
 
-    /* Schriftgrößen */
+    /* ======================================================
+       Rundungen
+    ====================================================== */
 
-    --font-small: .9rem;
-    --font-normal: 1rem;
-    --font-medium: 1.2rem;
-    --font-large: 1.6rem;
-    --font-xl: 2.3rem;
-    --font-hero: 3.6rem;
+    --radius-small: 6px;
+    --radius-medium: 12px;
+    --radius-large: 20px;
+    --radius-round: 999px;
+
+    /* ======================================================
+       Schatten
+    ====================================================== */
+
+    --shadow-small:
+        0 2px 8px rgba(0,0,0,.08);
+
+    --shadow-medium:
+        0 8px 20px rgba(0,0,0,.12);
+
+    --shadow-large:
+        0 15px 40px rgba(0,0,0,.18);
+
+    /* ======================================================
+       Animationen
+    ====================================================== */
+
+    --transition-fast: .2s ease;
+
+    --transition:
+        .3s ease;
+
+    --transition-slow:
+        .5s ease;
+
+    /* ======================================================
+       Schriftarten
+    ====================================================== */
+
+    --font-family:
+
+        "Segoe UI",
+        Arial,
+        Helvetica,
+        sans-serif;
+
+    /* ======================================================
+       Schriftgrößen
+    ====================================================== */
+
+    --font-xs: .8rem;
+    --font-sm: .9rem;
+    --font-md: 1rem;
+    --font-lg: 1.2rem;
+    --font-xl: 1.6rem;
+    --font-xxl: 2.4rem;
+    --font-hero: 3.8rem;
+
+    /* ======================================================
+       Zeilenhöhe
+    ====================================================== */
+
+    --line-height: 1.6;
+
+    /* ======================================================
+       Header
+    ====================================================== */
+
+    --header-height: 90px;
+
+    /* ======================================================
+       Buttons
+    ====================================================== */
+
+    --button-height: 50px;
+
+    /* ======================================================
+       Footer
+    ====================================================== */
+
+    --footer-padding: 70px;
+
+    /* ======================================================
+       Z-Index
+    ====================================================== */
+
+    --z-header: 1000;
+    --z-menu: 1100;
+    --z-modal: 1200;
+    --z-loading: 9999;
 
 }
