@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", () => {
        Menü öffnen
     ========================================== */
 
-    if (menuButton && mobileMenu && overlay) {
+    if (menuButton) {
 
         menuButton.addEventListener("click", () => {
 
@@ -35,15 +35,41 @@ document.addEventListener("DOMContentLoaded", () => {
        Menü schließen
     ========================================== */
 
+    function closeMenu() {
+
+        mobileMenu.classList.remove("active");
+        overlay.classList.remove("active");
+
+    }
+
     if (overlay) {
 
-        overlay.addEventListener("click", () => {
+        overlay.addEventListener("click", closeMenu);
 
-            mobileMenu.classList.remove("active");
-            overlay.classList.remove("active");
+    }
+
+    /* ==========================================
+       Untermenüs
+    ========================================== */
+
+    const submenuButtons = document.querySelectorAll(".submenu-arrow");
+
+    submenuButtons.forEach(button => {
+
+        button.addEventListener("click", function(e) {
+
+            e.preventDefault();
+            e.stopPropagation();
+
+            const submenu =
+                this.parentElement.nextElementSibling;
+
+            submenu.classList.toggle("active");
+
+            this.classList.toggle("active");
 
         });
 
-    }
+    });
 
 });
