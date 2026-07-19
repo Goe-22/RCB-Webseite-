@@ -1,113 +1,230 @@
 /* ==========================================================
-   RCB Webseite
-   Hero-Bereich
-   Version 0.1.1
+   RC Bande Zwickau e.V.
+   Version 1.0
+   Hero
 ========================================================== */
 
-/* ---------- Hero ---------- */
+/* ==========================================================
+   Hero
+========================================================== */
 
 .hero {
 
-    min-height: 85vh;
+    position: relative;
+
+    min-height: 650px;
 
     display: flex;
 
     align-items: center;
+
     justify-content: center;
 
-    text-align: center;
-
-    padding: 60px 20px;
+    overflow: hidden;
 
     background:
         linear-gradient(
-            rgba(9,18,31,.75),
-            rgba(9,18,31,.75)
+            rgba(0,0,0,.55),
+            rgba(0,0,0,.65)
         ),
         url("../images/hero.jpg");
 
     background-size: cover;
-    background-position: center;
+
+    background-position: center center;
+
     background-repeat: no-repeat;
 
 }
 
-/* Falls noch kein Bild vorhanden ist */
-
-.hero {
-
-    background-color: var(--rcb-blue-dark);
-
-}
-
-/* ---------- Inhalt ---------- */
+/* ==========================================================
+   Inhalt
+========================================================== */
 
 .hero-content {
 
     max-width: 900px;
 
+    padding: 40px;
+
+    text-align: center;
+
+    color: #ffffff;
+
+    z-index: 2;
+
 }
 
-/* ---------- Überschrift ---------- */
+.hero-content h1 {
 
-.hero h2 {
+    color: #ffffff;
 
-    font-size: clamp(3rem,7vw,6rem);
+    font-size: clamp(3rem,7vw,5.5rem);
+
+    font-weight: 800;
 
     line-height: 1.05;
 
-    margin-bottom: 25px;
+    letter-spacing: 2px;
 
     text-transform: uppercase;
 
-    letter-spacing: 2px;
+    margin-bottom: 30px;
 
 }
 
-/* ---------- Text ---------- */
+.hero-content p {
 
-.hero p {
+    color: rgba(255,255,255,.92);
 
     font-size: 1.35rem;
-
-    color: var(--light);
-
-    max-width: 650px;
-
-    margin: auto;
 
     margin-bottom: 40px;
 
 }
 
-/* ---------- Button ---------- */
+/* ==========================================================
+   Button
+========================================================== */
 
-.hero .button {
+.hero-button {
 
     display: inline-block;
 
-    padding: 18px 40px;
+    padding: 18px 42px;
 
     background: var(--rcb-red);
 
-    color: white;
+    color: #ffffff;
 
-    text-decoration: none;
+    font-weight: 700;
 
-    border-radius: 8px;
-
-    font-weight: bold;
+    border-radius: 50px;
 
     transition: .3s;
 
 }
 
-.hero .button:hover {
+.hero-button:hover {
 
     transform: translateY(-4px);
 
-    background: #ff4d4d;
+    box-shadow: 0 12px 30px rgba(0,0,0,.35);
 
-    box-shadow: 0 12px 25px rgba(0,0,0,.3);
+}
+
+/* ==========================================================
+   Scroll Pfeil
+========================================================== */
+
+.hero-scroll {
+
+    position: absolute;
+
+    bottom: 30px;
+
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    color: #ffffff;
+
+    font-size: 2rem;
+
+    animation: bounce 2s infinite;
+
+}
+
+/* ==========================================================
+   Animation
+========================================================== */
+
+@keyframes bounce {
+
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
+
+        transform: translate(-50%,0);
+
+    }
+
+    40% {
+
+        transform: translate(-50%,-12px);
+
+    }
+
+    60% {
+
+        transform: translate(-50%,-6px);
+
+    }
+
+}
+
+/* ==========================================================
+   Tablet
+========================================================== */
+
+@media (max-width:900px){
+
+.hero{
+
+min-height:520px;
+
+}
+
+.hero-content{
+
+padding:30px;
+
+}
+
+.hero-content p{
+
+font-size:1.15rem;
+
+}
+
+}
+
+/* ==========================================================
+   Smartphone
+========================================================== */
+
+@media (max-width:600px){
+
+.hero{
+
+min-height:460px;
+
+}
+
+.hero-content{
+
+padding:20px;
+
+}
+
+.hero-content h1{
+
+font-size:2.4rem;
+
+}
+
+.hero-content p{
+
+font-size:1rem;
+
+}
+
+.hero-button{
+
+padding:16px 32px;
+
+}
 
 }
