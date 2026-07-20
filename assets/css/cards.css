@@ -1,186 +1,281 @@
 /* ==========================================================
-   RCB Webseite
+   RC Bande Zwickau e.V.
+   Version 1.0
    Karten
-   Version 0.1.1
 ========================================================== */
 
-/* ---------- Bereiche ---------- */
+/* ==========================================================
+   Abschnitte
+========================================================== */
 
-.tracks,
-.news {
+section{
 
-    padding: 100px 0;
-
-}
-
-.tracks h2,
-.news h2 {
-
-    text-align: center;
-
-    font-size: 2.5rem;
-
-    margin-bottom: 60px;
+    padding:80px 0;
 
 }
 
-/* ---------- Karten-Layout ---------- */
+.section-title{
 
-.cards {
+    text-align:center;
 
-    display: grid;
-
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-
-    gap: 35px;
+    margin-bottom:50px;
 
 }
 
-/* ---------- Karte ---------- */
+.section-title h2{
 
-.card {
+    font-size:2.4rem;
 
-    background: #13253d;
+    color:var(--rcb-blue);
 
-    border-radius: 14px;
-
-    overflow: hidden;
-
-    box-shadow: var(--shadow);
-
-    transition: .35s;
+    margin-bottom:15px;
 
 }
 
-.card:hover {
+.section-title p{
 
-    transform: translateY(-8px);
+    color:#666;
 
-}
-
-/* ---------- Bild ---------- */
-
-.card-image {
-
-    height: 230px;
-
-    display: flex;
-
-    justify-content: center;
-
-    align-items: center;
-
-    background: linear-gradient(
-        135deg,
-        #1b3556,
-        #29476d
-    );
-
-    color: rgba(255,255,255,.55);
-
-    font-size: 1.3rem;
-
-    font-weight: bold;
+    font-size:1.1rem;
 
 }
 
-/* ---------- Inhalt ---------- */
+/* ==========================================================
+   Karten Raster
+========================================================== */
 
-.card-content {
+.card-grid{
 
-    padding: 30px;
+    display:grid;
 
-}
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
 
-.card h3 {
-
-    margin-top: 0;
-
-    margin-bottom: 18px;
-
-    font-size: 1.8rem;
+    gap:30px;
 
 }
 
-.card p {
+/* ==========================================================
+   Karte
+========================================================== */
 
-    color: var(--light);
+.card{
 
-    margin-bottom: 30px;
+    background:#ffffff;
 
-}
+    border-radius:20px;
 
-/* ---------- Newskarten ---------- */
+    overflow:hidden;
 
-.news .card {
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
 
-    padding: 35px;
-
-}
-
-.news .card h3 {
-
-    margin-top: 0;
+    transition:.3s;
 
 }
 
-/* ---------- Button ---------- */
+.card:hover{
 
-.card .button {
+    transform:translateY(-8px);
 
-    display: inline-block;
-
-    padding: 14px 28px;
-
-    background: var(--rcb-red);
-
-    color: white;
-
-    text-decoration: none;
-
-    border-radius: 6px;
-
-    transition: .3s;
+    box-shadow:0 20px 40px rgba(0,0,0,.15);
 
 }
 
-.card .button:hover {
+/* ==========================================================
+   Bilder
+========================================================== */
 
-    background: #ff4d4d;
+.card img{
+
+    width:100%;
+
+    height:240px;
+
+    object-fit:cover;
+
+}
+
+/* ==========================================================
+   Inhalt
+========================================================== */
+
+.card-content{
+
+    padding:30px;
 
 }
 
-/* ---------- Badge ---------- */
+.card-content h3{
 
-.badge {
+    color:var(--rcb-blue);
 
-    display: inline-block;
+    margin-bottom:15px;
 
-    margin-left: 10px;
-
-    padding: 4px 10px;
-
-    background: #f0b429;
-
-    color: #222;
-
-    font-size: .75rem;
-
-    font-weight: bold;
-
-    border-radius: 20px;
-
-    vertical-align: middle;
+    font-size:1.5rem;
 
 }
-.button-group {
 
-    display: flex;
+.card-content p{
 
-    flex-wrap: wrap;
+    line-height:1.7;
 
-    gap: 12px;
+    color:#555;
 
-    margin-top: 25px;
+    margin-bottom:25px;
+
+}
+
+/* ==========================================================
+   Status
+========================================================== */
+
+.status{
+
+    display:inline-block;
+
+    padding:10px 18px;
+
+    border-radius:30px;
+
+    font-weight:700;
+
+    margin-bottom:25px;
+
+}
+
+.open{
+
+    background:#dff7df;
+
+    color:#15803d;
+
+}
+
+.closed{
+
+    background:#ffe2e2;
+
+    color:#c1121f;
+
+}
+
+/* ==========================================================
+   Live Box
+========================================================== */
+
+.live-box{
+
+    background:var(--rcb-blue);
+
+    color:#ffffff;
+
+    padding:50px;
+
+    border-radius:20px;
+
+    text-align:center;
+
+}
+
+.live-box h3{
+
+    color:#ffffff;
+
+    font-size:2rem;
+
+    margin-bottom:15px;
+
+}
+
+.live-box p{
+
+    color:#f2f2f2;
+
+    margin-bottom:30px;
+
+}
+
+/* ==========================================================
+   Willkommen
+========================================================== */
+
+.welcome{
+
+    background:#ffffff;
+
+}
+
+.welcome p{
+
+    max-width:900px;
+
+    margin:0 auto;
+
+    text-align:center;
+
+    line-height:1.8;
+
+    font-size:1.15rem;
+
+}
+
+/* ==========================================================
+   Mitglied
+========================================================== */
+
+.member{
+
+    background:#f8f9fb;
+
+    text-align:center;
+
+}
+
+.member p{
+
+    max-width:800px;
+
+    margin:0 auto 35px;
+
+}
+
+/* ==========================================================
+   Sponsoren
+========================================================== */
+
+.sponsors{
+
+    background:#ffffff;
+
+}
+
+/* ==========================================================
+   Smartphone
+========================================================== */
+
+@media(max-width:768px){
+
+section{
+
+padding:60px 0;
+
+}
+
+.section-title h2{
+
+font-size:2rem;
+
+}
+
+.card img{
+
+height:200px;
+
+}
+
+.live-box{
+
+padding:30px;
+
+}
 
 }
