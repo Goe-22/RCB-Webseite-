@@ -1,0 +1,171 @@
+/* ==========================================================
+   RC Bande Zwickau e.V.
+   Version 1.0
+   Buttons
+========================================================== */
+
+/* ==========================================================
+   Standard Button
+========================================================== */
+
+.button{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    padding:16px 32px;
+
+    background:var(--rcb-red);
+
+    color:#ffffff;
+
+    border:none;
+
+    border-radius:50px;
+
+    font-size:1rem;
+
+    font-weight:700;
+
+    text-decoration:none;
+
+    cursor:pointer;
+
+    transition:all .3s ease;
+
+    box-shadow:0 6px 18px rgba(0,0,0,.15);
+
+}
+
+.button:hover{
+
+    background:#b3132a;
+
+    transform:translateY(-3px);
+
+    box-shadow:0 12px 25px rgba(0,0,0,.25);
+
+}
+
+.button:active{
+
+    transform:translateY(0);
+
+}
+
+/* ==========================================================
+   Blauer Button
+========================================================== */
+
+.button-secondary{
+
+    background:var(--rcb-blue);
+
+}
+
+.button-secondary:hover{
+
+    background:#143d73;
+
+}
+
+/* ==========================================================
+   Grüner Button
+========================================================== */
+
+.button-success{
+
+    background:#198754;
+
+}
+
+.button-success:hover{
+
+    background:#146c43;
+
+}
+
+/* ==========================================================
+   Grauer Button
+========================================================== */
+
+.button-light{
+
+    background:#ececec;
+
+    color:#333333;
+
+}
+
+.button-light:hover{
+
+    background:#d9d9d9;
+
+}
+
+/* ==========================================================
+   Button mit Icon
+========================================================== */
+
+.button i{
+
+    margin-right:10px;
+
+}
+
+/* ==========================================================
+   Große Buttons
+========================================================== */
+
+.button-large{
+
+    padding:20px 42px;
+
+    font-size:1.15rem;
+
+}
+
+/* ==========================================================
+   Kleine Buttons
+========================================================== */
+
+.button-small{
+
+    padding:10px 22px;
+
+    font-size:.9rem;
+
+}
+
+/* ==========================================================
+   Button deaktiviert
+========================================================== */
+
+.button:disabled{
+
+    opacity:.5;
+
+    cursor:not-allowed;
+
+    transform:none;
+
+    box-shadow:none;
+
+}
+
+/* ==========================================================
+   Smartphone
+========================================================== */
+
+@media(max-width:768px){
+
+.button{
+
+width:100%;
+
+}
+
+}
