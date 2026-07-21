@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Admin | RC Bande Zwickau e.V.</title>
+
+    <meta name="robots"
+          content="noindex,nofollow">
+
+    <link rel="icon"
+          href="../assets/images/logo.png">
+
+    <link rel="stylesheet"
+          href="admin.css">
+
+</head>
+
+<body>
+
+<div class="login-page">
+
+    <div class="login-card">
+
+        <img src="../assets/images/logo.png"
+             alt="RC Bande Zwickau Logo"
+             class="login-logo">
+
+        <h1>
+
+            Adminbereich
+
+        </h1>
+
+        <p>
+
+            RC Bande Zwickau e.V.
+
+        </p>
+
+        <form id="loginForm">
+
+            <div class="form-group">
+
+                <label for="username">
+
+                    Benutzername
+
+                </label>
+
+                <input
+                    type="text"
+                    id="username"
+                    name="username"
+                    autocomplete="username"
+                    required>
+
+            </div>
+
+            <div class="form-group">
+
+                <label for="password">
+
+                    Passwort
+
+                </label>
+
+                <input
+                    type="password"
+                    id="password"
+                    name="password"
+                    autocomplete="current-password"
+                    required>
+
+            </div>
+
+            <button
+                type="submit"
+                class="login-button">
+
+                Anmelden
+
+            </button>
+
+        </form>
+
+        <p id="loginError"
+           class="login-error"></p>
+
+    </div>
+
+</div>
+
+<script src="login.js"></script>
+
+</body>
+
+</html>
