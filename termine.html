@@ -2,65 +2,158 @@
 <html lang="de">
 
 <head>
+
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
 
     <title>Termine | RC Bande Zwickau e.V.</title>
 
     <meta name="description"
-        content="Veranstaltungen der RC Bande Zwickau e.V.">
+          content="Alle Termine, Trainingszeiten und Veranstaltungen der RC Bande Zwickau e.V.">
 
-    <link rel="stylesheet" href="assets/css/style.css">
+    <meta name="theme-color"
+          content="#0B2D5C">
+
+    <link rel="icon"
+          href="assets/images/logo.png">
+
+    <link rel="stylesheet"
+          href="assets/css/style.css">
+
 </head>
 
 <body>
 
-<header>
+<header class="site-header">
 
     <div class="container">
 
-        <div class="logo">
+        <a class="logo"
+           href="index.html">
 
-            <h1>RC BANDE ZWICKAU</h1>
+            <img src="assets/images/logo.png"
+                 alt="RC Bande Zwickau Logo">
 
-            <p>ONROAD • OFFROAD • RACING</p>
+            <div class="logo-text">
 
-        </div>
+                <span class="logo-title">
 
-        <nav>
+                    RC Bande Zwickau
+
+                </span>
+
+                <span class="logo-subtitle">
+
+                    Onroad • Offroad • Racing
+
+                </span>
+
+            </div>
+
+        </a>
+
+        <nav class="main-navigation">
 
             <ul>
 
                 <li><a href="index.html">Home</a></li>
+
                 <li><a href="verein.html">Verein</a></li>
-                <li><a href="strecken.html">Strecken</a></li>
-                <li><a href="termine.html" class="active">Termine</a></li>
+
+                <li class="has-dropdown">
+
+                    <a href="strecken.html">
+
+                        Strecken
+
+                    </a>
+
+                    <div class="dropdown">
+
+                        <ul>
+
+                            <li>
+
+                                <a href="onroad.html">
+
+                                    🏎️ Onroad
+
+                                </a>
+
+                            </li>
+
+                            <li>
+
+                                <a href="offroad.html">
+
+                                    🚙 Offroad
+
+                                </a>
+
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+                </li>
+
+                <li>
+
+                    <a class="active"
+                       href="termine.html">
+
+                        Termine
+
+                    </a>
+
+                </li>
+
                 <li><a href="reglement.html">Reglement</a></li>
+
                 <li><a href="ergebnisse.html">Ergebnisse</a></li>
+
                 <li><a href="live.html">Live</a></li>
-                <li><a href="mitglied.html">Mitglied werden</a></li>
+
                 <li><a href="kontakt.html">Kontakt</a></li>
 
             </ul>
 
         </nav>
 
+        <button class="menu-toggle">
+
+            ☰
+
+        </button>
+
     </div>
 
 </header>
 
-<main>
+<div class="mobile-overlay"></div>
 
-<section class="hero">
+<nav class="mobile-menu"></nav>
+
+<!-- ==========================================================
+     Hero
+========================================================== -->
+
+<section class="hero hero-termine">
 
     <div class="hero-content">
 
-        <h2>TERMINE</h2>
+        <h1>
+
+            Termine & Veranstaltungen
+
+        </h1>
 
         <p>
 
-            Hier findet ihr alle kommenden Veranstaltungen
-            der RC Bande Zwickau e.V.
+            RC Bande Zwickau e.V.
 
         </p>
 
@@ -68,157 +161,546 @@
 
 </section>
 
-<section class="news">
+<!-- ==========================================================
+     Nächste Veranstaltungen
+========================================================== -->
 
-<div class="container">
+<section class="events">
 
-<div class="cards">
+    <div class="container">
 
-<!-- Veranstaltung -->
+        <div class="section-title">
 
-<article class="card">
+            <h2>Nächste Veranstaltungen</h2>
 
-<div class="card-content">
+            <p>
 
-<h3>🏁 Vereinsrennen 2026</h3>
+                Hier findest du alle kommenden Rennen und Veranstaltungen.
 
-<p>
+            </p>
 
-📅 12.09.2026<br>
-📍 RC Bande Zwickau<br>
-🏎️ Onroad
+        </div>
 
-</p>
+        <div class="card">
 
-<p>
+            <div class="card-content">
 
-Kurze Beschreibung der Veranstaltung.
+                <div class="event-date">
 
-</p>
+                    08.08.2026
 
-<div class="button-group">
+                </div>
 
-<a href="#" class="button">
+                <h3>
 
-📄 Ausschreibung
+                    Sommercup 2026
 
-</a>
+                </h3>
 
-<a href="#" class="button">
+                <p>
 
-📝 Zur Nennung
+                    Austragungsort:
+                    RC Bande Zwickau e.V.
 
-</a>
+                </p>
 
-<!--
-<a href="#" class="button">
+                <p>
 
-📡 Zur Veranstaltung
+                    Strecke:
+                    🏎️ Onroad
 
-</a>
--->
+                </p>
 
-</div>
+                <div class="button-group">
 
-</div>
+                    <a href="#"
+                       class="button">
 
-</article>
+                        Ausschreibung
 
-<!-- Veranstaltung -->
+                    </a>
 
-<article class="card">
+                    <a href="#"
+                       class="button button-secondary">
 
-<div class="card-content">
+                        Nennung
 
-<h3>🏁 Sommer-Cup</h3>
+                    </a>
 
-<p>
+                    <a href="live.html"
+                       class="button button-success">
 
-📅 03.10.2026<br>
-📍 RC Bande Zwickau<br>
-🏁 Onroad & Offroad
+                        Live
 
-</p>
+                    </a>
 
-<p>
+                </div>
 
-Kurze Beschreibung der Veranstaltung.
+            </div>
 
-</p>
+        </div>
 
-<div class="button-group">
-
-<a href="#" class="button">
-
-📄 Ausschreibung
-
-</a>
-
-<!--
-<a href="#" class="button">
-
-📝 Zur Nennung
-
-</a>
--->
-
-</div>
-
-</div>
-
-</article>
-
-<!-- Veranstaltung -->
-
-<article class="card">
-
-<div class="card-content">
-
-<h3>🏁 Herbstrennen</h3>
-
-<p>
-
-📅 24.10.2026<br>
-📍 RC Bande Zwickau<br>
-🚙 Offroad
-
-</p>
-
-<p>
-
-Kurze Beschreibung der Veranstaltung.
-
-</p>
-
-<p>
-
-Weitere Informationen folgen.
-
-</p>
-
-</div>
-
-</article>
-
-</div>
-
-</div>
+    </div>
 
 </section>
 
-</main>
+<!-- ==========================================================
+     Trainingszeiten
+========================================================== -->
+
+<section class="training-times">
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <h2>Regelmäßige Trainingszeiten</h2>
+
+            <p>
+
+                Unsere regelmäßigen Trainingszeiten.
+                Änderungen werden auf der Startseite und
+                im Streckenstatus angezeigt.
+
+            </p>
+
+        </div>
+
+        <div class="card-grid">
+
+            <article class="card">
+
+                <div class="card-content">
+
+                    <h3>Donnerstag</h3>
+
+                    <p>
+
+                        ab 17:00 Uhr
+
+                    </p>
+
+                </div>
+
+            </article>
+
+            <article class="card">
+
+                <div class="card-content">
+
+                    <h3>Samstag</h3>
+
+                    <p>
+
+                        ab 13:00 Uhr
+
+                    </p>
+
+                </div>
+
+            </article>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ==========================================================
+     Veranstaltungskalender
+========================================================== -->
+
+<section class="calendar">
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <h2>Veranstaltungskalender</h2>
+
+            <p>
+
+                Alle Veranstaltungen des Jahres
+                auf einen Blick.
+
+            </p>
+
+        </div>
+
+        <div class="card">
+
+            <div class="card-content">
+
+                <p>
+
+                    Hier wird später der interaktive
+                    Veranstaltungskalender eingebunden.
+
+                </p>
+
+                <p>
+
+                    Alle Termine werden automatisch
+                    über den Adminbereich gepflegt.
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ==========================================================
+     Vergangene Veranstaltungen
+========================================================== -->
+
+<section class="past-events">
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <h2>Vergangene Veranstaltungen</h2>
+
+        </div>
+
+        <div class="card">
+
+            <div class="card-content">
+
+                <h3>
+
+                    Frühlingsrennen 2026
+
+                </h3>
+
+                <p>
+
+                    Ergebnisse und Bilder stehen
+                    weiterhin zur Verfügung.
+
+                </p>
+
+                <div class="button-group">
+
+                    <a href="ergebnisse.html"
+                       class="button">
+
+                        Ergebnisse
+
+                    </a>
+
+                    <a href="#"
+                       class="button button-secondary">
+
+                        Bilder
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ==========================================================
+     Ausschreibungen
+========================================================== -->
+
+<section class="documents">
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <h2>Ausschreibungen</h2>
+
+            <p>
+
+                Für jede Veranstaltung stehen hier die
+                aktuellen Ausschreibungen als PDF
+                zum Download bereit.
+
+            </p>
+
+        </div>
+
+        <div class="card">
+
+            <div class="card-content">
+
+                <h3>Sommercup 2026</h3>
+
+                <p>
+
+                    Die Ausschreibung wird nach der
+                    Veröffentlichung hier bereitgestellt.
+
+                </p>
+
+                <a href="#"
+                   class="button">
+
+                    Ausschreibung herunterladen
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ==========================================================
+     Nennung
+========================================================== -->
+
+<section class="registration">
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <h2>Nennung</h2>
+
+            <p>
+
+                Die Anmeldung erfolgt über den jeweiligen
+                Nennungslink der Veranstaltung.
+
+            </p>
+
+        </div>
+
+        <div class="card">
+
+            <div class="card-content">
+
+                <h3>Sommercup 2026</h3>
+
+                <p>
+
+                    Sobald die Nennung geöffnet ist,
+                    erscheint hier der entsprechende Link.
+
+                </p>
+
+                <a href="#"
+                   class="button">
+
+                    Zur Nennung
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ==========================================================
+     Ergebnisse
+========================================================== -->
+
+<section class="results-preview">
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <h2>Ergebnisse</h2>
+
+            <p>
+
+                Ergebnisse abgeschlossener Veranstaltungen
+                werden automatisch im Bereich
+                „Ergebnisse“ archiviert.
+
+            </p>
+
+        </div>
+
+        <div class="card">
+
+            <div class="card-content">
+
+                <a href="ergebnisse.html"
+                   class="button">
+
+                    Zu den Ergebnissen
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ==========================================================
+     Live-Timing
+========================================================== -->
+
+<section class="live-preview">
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <h2>Live-Timing</h2>
+
+        </div>
+
+        <div class="live-box">
+
+            <h3>
+
+                📡 Live-Zeitnahme
+
+            </h3>
+
+            <p>
+
+                Während einer laufenden Veranstaltung
+                gelangst du von hier direkt
+                zum Live-Timing.
+
+            </p>
+
+            <a href="live.html"
+               class="button">
+
+                Live-Timing öffnen
+
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
 
 <footer>
 
-<div class="container">
+    <div class="footer-container">
 
-<p>
+        <div class="footer-grid">
 
-© 2026 RC Bande Zwickau e.V.
+            <div>
 
-</p>
+                <img src="assets/images/logo.png"
+                     alt="RC Bande Zwickau"
+                     class="footer-logo">
 
-</div>
+                <div class="footer-title">
+
+                    RC Bande Zwickau e.V.
+
+                </div>
+
+                <p class="footer-text">
+
+                    Motorsport mit Leidenschaft seit 2020.
+
+                </p>
+
+            </div>
+
+            <div>
+
+                <h3 class="footer-heading">
+
+                    Verein
+
+                </h3>
+
+                <ul class="footer-links">
+
+                    <li><a href="verein.html">Über uns</a></li>
+
+                    <li><a href="mitglied.html">Mitglied werden</a></li>
+
+                    <li><a href="kontakt.html">Kontakt</a></li>
+
+                </ul>
+
+            </div>
+
+            <div>
+
+                <h3 class="footer-heading">
+
+                    Strecken
+
+                </h3>
+
+                <ul class="footer-links">
+
+                    <li><a href="onroad.html">Onroad</a></li>
+
+                    <li><a href="offroad.html">Offroad</a></li>
+
+                    <li><a href="live.html">Live-Timing</a></li>
+
+                    <li><a href="termine.html">Termine</a></li>
+
+                </ul>
+
+            </div>
+
+            <div>
+
+                <h3 class="footer-heading">
+
+                    Rechtliches
+
+                </h3>
+
+                <ul class="footer-links">
+
+                    <li><a href="impressum.html">Impressum</a></li>
+
+                    <li><a href="datenschutz.html">Datenschutz</a></li>
+
+                    <li><a href="#">Facebook</a></li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+
+            <div>
+
+                © 2026 RC Bande Zwickau e.V.
+                Alle Rechte vorbehalten.
+
+            </div>
+
+            <div class="version">
+
+                Version 1.0
+
+            </div>
+
+        </div>
+
+    </div>
 
 </footer>
 
