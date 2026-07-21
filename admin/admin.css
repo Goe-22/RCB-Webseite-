@@ -1,0 +1,205 @@
+/* ==========================================================
+   Grundeinstellungen
+========================================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+
+    font-family:Arial, Helvetica, sans-serif;
+
+    background:#0B2D5C;
+
+    min-height:100vh;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    color:#222;
+
+}
+
+/* ==========================================================
+   Login
+========================================================== */
+
+.login-page{
+
+    width:100%;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    padding:30px;
+
+}
+
+.login-card{
+
+    width:100%;
+
+    max-width:420px;
+
+    background:#ffffff;
+
+    border-radius:18px;
+
+    padding:40px;
+
+    box-shadow:0 20px 45px rgba(0,0,0,.25);
+
+    text-align:center;
+
+}
+
+.login-logo{
+
+    width:120px;
+
+    margin-bottom:25px;
+
+}
+
+.login-card h1{
+
+    color:#0B2D5C;
+
+    margin-bottom:10px;
+
+}
+
+.login-card p{
+
+    color:#666;
+
+    margin-bottom:30px;
+
+}
+
+/* ==========================================================
+   Formular
+========================================================== */
+
+.form-group{
+
+    text-align:left;
+
+    margin-bottom:20px;
+
+}
+
+.form-group label{
+
+    display:block;
+
+    margin-bottom:8px;
+
+    font-weight:bold;
+
+}
+
+.form-group input{
+
+    width:100%;
+
+    padding:14px;
+
+    border:1px solid #cccccc;
+
+    border-radius:10px;
+
+    font-size:16px;
+
+    transition:.3s;
+
+}
+
+.form-group input:focus{
+
+    border-color:#0B2D5C;
+
+    outline:none;
+
+    box-shadow:0 0 8px rgba(11,45,92,.25);
+
+}
+
+/* ==========================================================
+   Button
+========================================================== */
+
+.login-button{
+
+    width:100%;
+
+    padding:15px;
+
+    border:none;
+
+    border-radius:10px;
+
+    background:#0B2D5C;
+
+    color:#ffffff;
+
+    font-size:17px;
+
+    font-weight:bold;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.login-button:hover{
+
+    background:#154a92;
+
+}
+
+/* ==========================================================
+   Fehlermeldung
+========================================================== */
+
+.login-error{
+
+    color:#d60000;
+
+    margin-top:20px;
+
+    font-weight:bold;
+
+    min-height:24px;
+
+}
+
+/* ==========================================================
+   Responsive
+========================================================== */
+
+@media(max-width:600px){
+
+    .login-card{
+
+        padding:30px 25px;
+
+    }
+
+    .login-logo{
+
+        width:90px;
+
+    }
+
+}
