@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+
+<html lang="de">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>Veranstaltungen | RC Bande Zwickau</title>
+
+<link rel="stylesheet"
+href="admin.css">
+
+<link rel="icon"
+href="../assets/images/logo.png">
+
+</head>
+
+<body>
+
+<header class="admin-header">
+
+<div class="admin-logo">
+
+<img src="../assets/images/logo.png"
+alt="Logo">
+
+<div>
+
+<h1>
+
+RC Bande Zwickau
+
+</h1>
+
+<span>
+
+Veranstaltungen
+
+</span>
+
+</div>
+
+</div>
+
+<div class="admin-user">
+
+Administrator
+
+</div>
+
+</header>
+
+<nav class="admin-menu">
+
+<a href="dashboard.html">
+
+🏠 Dashboard
+
+</a>
+
+<a href="events.html"
+class="active">
+
+📅 Veranstaltungen
+
+</a>
+
+<a href="#">
+
+📡 Live-System
+
+</a>
+
+<a href="#">
+
+🏁 Ergebnisse
+
+</a>
+
+<a href="#">
+
+⚙ Einstellungen
+
+</a>
+
+</nav>
+
+<main class="admin-content">
+
+<section>
+
+<h2>
+
+Veranstaltungen
+
+</h2>
+
+<p>
+
+Hier werden alle Veranstaltungen verwaltet.
+
+</p>
+
+</section>
+
+<section class="dashboard-grid">
+
+<div class="dashboard-card">
+
+<h3>
+
+➕ Neue Veranstaltung
+
+</h3>
+
+<p>
+
+Neue Veranstaltung anlegen.
+
+</p>
+
+</div>
+
+<div class="dashboard-card">
+
+<h3>
+
+🏁 Rennen
+
+</h3>
+
+<p>
+
+Rennveranstaltungen verwalten.
+
+</p>
+
+</div>
+
+<div class="dashboard-card">
+
+<h3>
+
+🏎️ Freies Training
+
+</h3>
+
+<p>
+
+Trainings verwalten.
+
+</p>
+
+</div>
+
+<div class="dashboard-card">
+
+<h3>
+
+📅 Kalender
+
+</h3>
+
+<p>
+
+Alle Termine anzeigen.
+
+</p>
+
+</div>
+
+</section>
+
+<!-- ==========================================================
+     Veranstaltungseditor
+========================================================== -->
+
+<section class="event-editor">
+
+    <h2>
+
+        Veranstaltung bearbeiten
+
+    </h2>
+
+    <div class="dashboard-card">
+
+        <form class="admin-form">
+
+            <div class="form-group">
+
+                <label for="eventName">
+
+                    Veranstaltungsname
+
+                </label>
+
+                <input
+                    type="text"
+                    id="eventName"
+                    placeholder="z. B. Sommercup 2026">
+
+            </div>
+
+            <div class="form-group">
+
+                <label for="eventDate">
+
+                    Datum
+
+                </label>
+
+                <input
+                    type="date"
+                    id="eventDate">
+
+            </div>
+
+            <div class="form-group">
+
+                <label for="track">
+
+                    Strecke
+
+                </label>
+
+                <select id="track">
+
+                    <option>Onroad</option>
+
+                    <option>Offroad</option>
+
+                    <option>Beide Strecken</option>
+
+                </select>
+
+            </div>
+
+            <div class="form-group">
+
+                <label for="eventType">
+
+                    Veranstaltungstyp
+
+                </label>
+
+                <select id="eventType">
+
+                    <option>Freies Training</option>
+
+                    <option>Vereinsrennen</option>
+
+                    <option>SK-Lauf</option>
+
+                    <option>Freundschaftsrennen</option>
+
+                    <option>Sonstige Veranstaltung</option>
+
+                </select>
+
+            </div>
+
+            <div class="form-group">
+
+                <label>
+
+                    Beschreibung
+
+                </label>
+
+                <textarea rows="6"
+                          placeholder="Beschreibung der Veranstaltung..."></textarea>
+
+            </div>
+
+        </form>
+
+    </div>
+
+</section>
+
+<!-- ==========================================================
+     Live-Einstellungen
+========================================================== -->
+
+<section class="event-live">
+
+    <h2>
+
+        Live-Einstellungen
+
+    </h2>
+
+    <div class="dashboard-card">
+
+        <label>
+
+            <input type="checkbox">
+
+            Live-Timing aktivieren
+
+        </label>
+
+        <br><br>
+
+        <label>
+
+            <input type="checkbox">
+
+            Ergebnisse automatisch veröffentlichen
+
+        </label>
+
+        <br><br>
+
+        <label>
+
+            <input type="checkbox">
+
+            Training öffentlich anzeigen
+
+        </label>
+
+        <br><br>
+
+        <label>
+
+            <input type="checkbox">
+
+            Veranstaltung auf Startseite anzeigen
+
+        </label>
+
+    </div>
+
+</section>
+
+<!-- ==========================================================
+     Dokumente
+========================================================== -->
+
+<section class="event-files">
+
+    <h2>
+
+        Dokumente
+
+    </h2>
+
+    <div class="dashboard-card">
+
+        <button class="login-button">
+
+            Ausschreibung hochladen
+
+        </button>
+
+        <br><br>
+
+        <button class="login-button">
+
+            Ergebnisse hochladen
+
+        </button>
+
+        <br><br>
+
+        <button class="login-button">
+
+            Bilder hinzufügen
+
+        </button>
+
+    </div>
+
+</section>
+
+<!-- ==========================================================
+     Veranstaltungsliste
+========================================================== -->
+
+<section class="event-list">
+
+    <h2>
+
+        Vorhandene Veranstaltungen
+
+    </h2>
+
+    <div class="dashboard-card">
+
+        <table class="track-table">
+
+            <thead>
+
+                <tr>
+
+                    <th>Datum</th>
+
+                    <th>Veranstaltung</th>
+
+                    <th>Strecke</th>
+
+                    <th>Status</th>
+
+                    <th>Aktion</th>
+
+                </tr>
+
+            </thead>
+
+            <tbody>
+
+                <tr>
+
+                    <td>08.08.2026</td>
+
+                    <td>Sommercup 2026</td>
+
+                    <td>🏎️ Onroad</td>
+
+                    <td>Vorbereitung</td>
+
+                    <td>
+
+                        <button class="login-button">
+
+                            Bearbeiten
+
+                        </button>
+
+                    </td>
+
+                </tr>
+
+                <tr>
+
+                    <td>15.08.2026</td>
+
+                    <td>Freies Training</td>
+
+                    <td>🚙 Offroad</td>
+
+                    <td>Geplant</td>
+
+                    <td>
+
+                        <button class="login-button">
+
+                            Bearbeiten
+
+                        </button>
+
+                    </td>
+
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+</section>
+
+<!-- ==========================================================
+     Aktionen
+========================================================== -->
+
+<section class="event-actions">
+
+    <h2>
+
+        Aktionen
+
+    </h2>
+
+    <div class="dashboard-grid">
+
+        <div class="dashboard-card">
+
+            <button class="login-button">
+
+                💾 Veranstaltung speichern
+
+            </button>
+
+        </div>
+
+        <div class="dashboard-card">
+
+            <button class="login-button">
+
+                🌐 Veranstaltung veröffentlichen
+
+            </button>
+
+        </div>
+
+        <div class="dashboard-card">
+
+            <button class="login-button">
+
+                📋 Veranstaltung duplizieren
+
+            </button>
+
+        </div>
+
+        <div class="dashboard-card">
+
+            <button class="login-button">
+
+                🗄️ Archivieren
+
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+
+</main>
+
+<footer class="admin-footer">
+
+    <p>
+
+        © 2026 RC Bande Zwickau e.V.
+
+    </p>
+
+    <p>
+
+        Veranstaltungsverwaltung · Version 1.0
+
+    </p>
+
+</footer>
+
+<script src="dashboard.js"></script>
+
+</body>
+
+</html>
