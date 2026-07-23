@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+
+<html lang="de">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>Mediathek | RC Bande Zwickau</title>
+
+<link rel="stylesheet"
+href="admin.css">
+
+<link rel="icon"
+href="../assets/images/logo.png">
+
+</head>
+
+<body>
+
+<header class="admin-header">
+
+<div class="admin-logo">
+
+<img src="../assets/images/logo.png"
+alt="Logo">
+
+<div>
+
+<h1>
+
+RC Bande Zwickau
+
+</h1>
+
+<span>
+
+Mediathek
+
+</span>
+
+</div>
+
+</div>
+
+<div class="admin-user">
+
+Administrator
+
+</div>
+
+</header>
+
+<nav class="admin-menu">
+
+<a href="dashboard.html">🏠 Dashboard</a>
+
+<a href="events.html">📅 Veranstaltungen</a>
+
+<a href="live.html">📡 Live-System</a>
+
+<a href="results.html">🏁 Ergebnisse</a>
+
+<a href="news.html">📰 News</a>
+
+<a href="media.html" class="active">🖼 Mediathek</a>
+
+<a href="settings.html">⚙ Einstellungen</a>
+
+</nav>
+
+<main class="admin-content">
+
+<section>
+
+<h2>
+
+Mediathek
+
+</h2>
+
+<p>
+
+Alle Bilder und Dokumente zentral verwalten.
+
+</p>
+
+</section>
+
+<section class="dashboard-grid">
+
+<div class="dashboard-card">
+
+<h3>
+
+🖼 Bilder
+
+</h3>
+
+<p>
+
+Alle Vereinsbilder.
+
+</p>
+
+</div>
+
+<div class="dashboard-card">
+
+<h3>
+
+📄 Dokumente
+
+</h3>
+
+<p>
+
+PDFs und Dateien.
+
+</p>
+
+</div>
+
+<div class="dashboard-card">
+
+<h3>
+
+🏁 Veranstaltungen
+
+</h3>
+
+<p>
+
+Medien nach Veranstaltungen.
+
+</p>
+
+</div>
+
+<div class="dashboard-card">
+
+<h3>
+
+🗑 Papierkorb
+
+</h3>
+
+<p>
+
+Gelöschte Dateien.
+
+</p>
+
+</div>
+
+</section>
+
+<!-- ==========================================================
+     Upload
+========================================================== -->
+
+<section class="media-upload">
+
+<h2>
+
+Datei hochladen
+
+</h2>
+
+<div class="dashboard-card">
+
+<form class="admin-form">
+
+<div class="form-group">
+
+<label>Datei auswählen</label>
+
+<input type="file">
+
+</div>
+
+<div class="form-group">
+
+<label>Kategorie</label>
+
+<select>
+
+<option>Startseite</option>
+
+<option>News</option>
+
+<option>Veranstaltung</option>
+
+<option>Onroad</option>
+
+<option>Offroad</option>
+
+<option>Verein</option>
+
+<option>Sponsoren</option>
+
+<option>Dokument</option>
+
+</select>
+
+</div>
+
+<div class="form-group">
+
+<label>Beschreibung</label>
+
+<input type="text"
+placeholder="Beschreibung">
+
+</div>
+
+<button class="login-button">
+
+⬆ Datei hochladen
+
+</button>
+
+</form>
+
+</div>
+
+</section>
+
+<section class="media-grid">
+
+<h2>
+
+Letzte Uploads
+
+</h2>
+
+<div class="dashboard-grid">
+
+<div class="dashboard-card">
+
+🖼 hero.jpg
+
+</div>
+
+<div class="dashboard-card">
+
+🖼 logo.png
+
+</div>
+
+<div class="dashboard-card">
+
+📄 Ausschreibung.pdf
+
+</div>
+
+<div class="dashboard-card">
+
+🖼 Onroad.jpg
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ==========================================================
+     Dateiverwaltung
+========================================================== -->
+
+<section class="media-manager">
+
+<h2>
+
+Dateiverwaltung
+
+</h2>
+
+<div class="dashboard-card">
+
+<table class="track-table">
+
+<thead>
+
+<tr>
+
+<th>Datei</th>
+
+<th>Kategorie</th>
+
+<th>Verwendet in</th>
+
+<th>Aktion</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+
+<td>hero.jpg</td>
+
+<td>Startseite</td>
+
+<td>Home</td>
+
+<td>Bearbeiten</td>
+
+</tr>
+
+<tr>
+
+<td>logo.png</td>
+
+<td>Verein</td>
+
+<td>Alle Seiten</td>
+
+<td>Bearbeiten</td>
+
+</tr>
+
+<tr>
+
+<td>Ausschreibung.pdf</td>
+
+<td>Veranstaltung</td>
+
+<td>Sommercup</td>
+
+<td>Bearbeiten</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+</div>
+
+</section>
+
+</main>
+
+<footer class="admin-footer">
+
+<p>
+
+© 2026 RC Bande Zwickau e.V.
+
+</p>
+
+<p>
+
+Mediathek · Version 1.0
+
+</p>
+
+</footer>
+
+<script src="dashboard.js"></script>
+
+</body>
+
+</html>
