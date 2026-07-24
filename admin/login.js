@@ -1,35 +1,23 @@
-// ==========================================================
-// RC Bande Zwickau
-// Admin Login (Entwicklung)
-// Wird später durch PHP ersetzt
-// ==========================================================
+<button class="login-button">
 
-const loginForm = document.getElementById("loginForm");
+Anmelden
 
-const loginError = document.getElementById("loginError");
+</button>const username = "admin";
+const password = "rcb2020";
 
-loginForm.addEventListener("submit", function(event){
+function login() {
 
-    event.preventDefault();
+    const user = document.getElementById("username").value;
+    const pass = document.getElementById("password").value;
 
-    const username = document.getElementById("username").value.trim();
-
-    const password = document.getElementById("password").value;
-
-    // ============================================
-    // Testzugang
-    // ============================================
-
-    if(username === "admin" && password === "rcb2026"){
+    if (user === username && pass === password) {
 
         window.location.href = "dashboard.html";
 
-    }
+    } else {
 
-    else{
-
-        loginError.textContent = "Benutzername oder Passwort ist falsch.";
+        alert("Benutzername oder Passwort falsch.");
 
     }
 
-});
+}
