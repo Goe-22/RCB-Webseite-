@@ -1,10 +1,8 @@
 <!DOCTYPE html>
 <html lang="de">
-
 <head>
 
 <meta charset="UTF-8">
-
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>Login | RC Bande Zwickau</title>
@@ -19,69 +17,48 @@
 
 <div class="login-container">
 
-    <div class="login-box">
+<div class="login-box">
 
-        <img
-            src="../assets/images/logo.png"
-            alt="RC Bande Zwickau Logo"
-            class="login-logo">
+<img src="../assets/images/logo.png"
+class="login-logo">
 
-        <h1>
+<h1>RC Bande Zwickau</h1>
 
-            RC Bande Zwickau
+<p>Administrationsbereich</p>
 
-        </h1>
+<div class="form-group">
 
-        <p>
+<label>Benutzername</label>
 
-            Administrationsbereich
+<input
+id="username"
+type="text">
 
-        </p>
+</div>
 
-        <div class="form-group">
+<div class="form-group">
 
-            <label>
+<label>Passwort</label>
 
-                Benutzername
+<input
+id="password"
+type="password">
 
-            </label>
+</div>
 
-            <input
-                id="username"
-                type="text"
-                placeholder="Benutzername">
+<button
+class="login-button"
+onclick="login()">
 
-        </div>
+Anmelden
 
-        <div class="form-group">
+</button>
 
-            <label>
-
-                Passwort
-
-            </label>
-
-            <input
-                id="password"
-                type="password"
-                placeholder="Passwort">
-
-        </div>
-
-        <button
-            class="login-button"
-            onclick="login()">
-
-            Anmelden
-
-        </button>
-
-    </div>
+</div>
 
 </div>
 
 <script src="login.js"></script>
 
 </body>
-
 </html>
