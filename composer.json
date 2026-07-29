@@ -1,0 +1,13 @@
+{
+    "name": "rc-bande-zwickau/platform",
+    "description": "RC Bande Zwickau Plattform",
+    "type": "project",
+    "require": {
+        "php": "^8.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/"
+        }
+    }
+}
